@@ -1,0 +1,296 @@
+* {
+    --btn-border-width: 2.2px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url("../fonts/minecraftten.ttf");
+}
+body {
+    background-color: #171615;
+}
+
+h1 {
+    font-family: minecraft;
+    font-size: 60px;
+}
+
+.btn {
+    text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.btn img {
+    width: 30px;
+    margin-left: 5px;
+}
+.btn:hover {
+    text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-mc {
+    font-family: minecraft;
+    font-size: 20px;
+    position: relative !important;
+    background-color: #3c8527;
+    padding: 5px 30px;
+    color: #fff !important;
+    border: 0;
+    border-top: var(--btn-border-width) solid #53af38 !important;
+    border-bottom: var(--btn-border-width) solid #1b4510 !important;
+    border-radius: 0;
+    transition: 0.1s;
+    padding-bottom: 10px;
+}
+.btn-mc::before,
+.btn-mc::after {
+    content: " ";
+    position: absolute;
+    background-color: #2d671d;
+    width: var(--btn-border-width);
+    height: 100%;
+    left: calc(var(--btn-border-width) * -1);
+    top: 0;
+}
+.btn-mc::after {
+    left: unset;
+    right: calc(var(--btn-border-width) * -1);
+}
+.btn-mc:hover {
+    background-color: rgb(70, 145, 49);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header .news-header {
+    background-color: #1c1b1a;
+    height: 85vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+header .news-header .carousel-indicators {
+    padding-bottom: 70px;
+}
+header .news-header .carousel-item .carousel-caption {
+    z-index: 30;
+}
+header .news-header .carousel-item::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    content: " ";
+    background: #1c1b1a;
+    background: linear-gradient(180deg, rgba(28, 27, 26, 0) 0%, #1c1b1a 80%);
+    z-index: 8;
+}
+header .news-header .news-data {
+    padding-bottom: 85px;
+}
+header .news-header .news-data h6 {
+    position: relative;
+    opacity: 0.5;
+    font-weight: 400;
+}
+header .news-header .news-data h4 {
+    position: relative;
+    text-transform: uppercase;
+}
+header .news-header .bg-cover-center {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+}
+header .header-gradient-separator-bg {
+    position: relative;
+    background: #1c1b1a;
+    background: linear-gradient(
+        180deg,
+        #1c1b1a 0%,
+        #1c1b1a 15%,
+        #1c1b1a 80%,
+        rgba(28, 27, 26, 0) 100%
+    );
+    z-index: 0;
+    padding-bottom: 100px;
+}
+header .header-creeper {
+    width: 25%;
+}
+
+@media (min-width: 768px) {
+    .header-creeper {
+        width: 100% !important;
+    }
+}
+footer {
+    background-color: #201f1e;
+}
+footer .social {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: 0.25s;
+}
+footer .social:hover {
+    opacity: 0.8;
+}
+
+.navbar,
+.navbar-mobile {
+    position: fixed;
+    z-index: 9999;
+    width: 70vw;
+    left: 15vw;
+    background-color: rgba(45, 45, 45, 0.67);
+    border: 1px solid #404040;
+    color: #fff !important;
+}
+.navbar .nav-link,
+.navbar-mobile .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar .nav-link:hover,
+.navbar-mobile .nav-link:hover {
+    color: #53af38;
+}
+
+.navbar-mobile {
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(45, 45, 45);
+}
+
+.accordion .accordion-button {
+    background-color: #262525;
+    font-weight: 700;
+    font-size: 18px;
+    color: #3c8527;
+    box-shadow: unset !important;
+    margin-top: 10px;
+    border-top: 1px solid #404040 !important;
+}
+.accordion .accordion-button::after {
+    display: none;
+}
+.accordion .accordion-button img {
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    transition: 0.25s;
+}
+.accordion .collapsed {
+    color: #fff;
+}
+.accordion .collapsed img {
+    transform: rotate(-180deg);
+}
+.accordion .accordion-item {
+    border: 0 !important;
+    background-color: #262525;
+    border-left: 1px solid #404040 !important;
+    border-right: 1px solid #404040 !important;
+    border-bottom: 1px solid #404040 !important;
+    font-size: 15px;
+}
+.accordion .accordion-item .accordion-body {
+    padding-top: 0;
+}
+.accordion .active {
+    color: #3c8527;
+}
+
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    bottom: 25px;
+    left: calc(50% - 15px);
+}
+
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll-wheel 1.5s infinite;
+}
+
+@keyframes scroll-wheel {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 5px);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, 15px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 5px);
+    }
+}
+@keyframes fadeIn {
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.message-box {
+    background-color: #3c8527;
+    padding: 15px;
+    border: 5px solid #2a5e1b;
+    border-radius: 2px;
+}
+.message-box a {
+    color: #262525;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.hero {
+    background-image: url("../images/webbg.png");
+    background-size: cover;
+    background-position: center top;
+}
+.hero h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+} /*# sourceMappingURL=style.css.map */
