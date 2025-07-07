@@ -1,3 +1,5 @@
+Archiváltam a repot, mivel ez számomra jelengleg idővesztés. Hátha valakinek egyszer hasznos lesz.
+
 A [MesterMC.hu](https://mesterMC.hu) weboldal Laravelben megoldva.
 
 A repo csak olyan publikus fájlokat tartalmaz, amelyek mindenki számára bármikor elérhetők, és nem tartalmaz semmilyen backendet a MesterMC.hu oldalról. Minden backend saját megvalósítás (API stb..).
