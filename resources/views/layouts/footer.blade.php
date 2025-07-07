@@ -2,7 +2,7 @@
         <div class="container text-white py-4">
             <div class="row d-flex align-items-center">
                 <div class="col-lg mb-2">
-                    <p class="m-0 p-0 opacity-75"><a href="https://mestermc.hu/impresszum.pdf">Impresszum</a> <a href="https://mestermc.hu/aszf.pdf">ÁSZF</a> <a href="https://mestermc.hu/adatkezeles.pdf">Adatkezelési tájékoztató</a></p>
+                    <p class="m-0 p-0 opacity-75"><a href="{{ asset('assets/legal/impresszum.pdf') }}">Impresszum</a> <a href="{{ asset('assets/legal/aszf.pdf') }}">ÁSZF</a> <a href="{{ asset('assets/legal/adatkezeles.pdf') }}">Adatkezelési tájékoztató</a></p>
                     <p class="m-0 p-0 opacity-75">Minden jog fenntartva! MesterMC 2025-</p>
                     <p class="m-0 p-0 opacity-25 mt-3">"Minecraft" is a trademark of Mojang Synergies AB.</p>
                 </div>

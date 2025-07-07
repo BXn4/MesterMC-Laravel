@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title', 'MesterMC.hu - Magyarország legnagyobb Minecraft szerver csoportja!')
 
+@section('content')
 <div class="container-fluid hero">
   <div class="container text-start">
     <div class="row" style="height: 100vh; max-height: 800px;">
@@ -8,7 +9,7 @@
         <h2 class="mt-5 pt-4">Helló újra!</h2>
         <p class="opacity-75">A csapat megújult, de a MesterMC a régi maradt! Töltsd le a megújult kliensünket, regisztrálj a megújult bányaközpontban és csatlakozz szervereinkre még ma! Fedezd fel a megújult, de régi hangulatú felületeket, új funkciókat és élményeket – minden adott, hogy azonnal belevágj a kalandba!</p>
         <div>
-          <a href="#" class="btn btn-mc me-2 mb-2">
+          <a href="{{ url('/login') }}" class="btn btn-mc me-2 mb-2">
             <img src="{{ asset('assets/images/belepes.png') }}" alt="Bányaközpont" style="width: 190px;">
           </a>
           <a href="#download" class="btn btn-mc mb-2">
@@ -22,9 +23,6 @@
     <div class="wheel"></div>
   </div>
 </div>
-<!--<div id="header-news" class="carousel slide carousel-fade news-header" data-bs-ride="carousel"><div class="carousel-indicators flex-wrap"><button type="button" data-bs-target="#header-news" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#header-news" data-bs-slide-to="1" class="" aria-label="Slide 2"></button><div class="w-100"></div><div class="scroll-indicator"><div class="mouse"><div class="wheel"></div></div></div></div><div class="carousel-inner"><div class="carousel-item active bg-cover-center"
-            style="background-image: url('uploads/news/mestermc_cover_hamarosan.png');"><div class="carousel-caption  news-data"><h6>Legfrissebb híreink</h6><h4>Visszatér a MesterMC!</h4></div></div><div class="carousel-item bg-cover-center"
-            style="background-image: url('uploads/news/discord_post.png');"><div class="carousel-caption  news-data"><h6>Legfrissebb híreink</h6><h4>Lépj be Discord szerverünkre!</h4></div></div></div></div>-->
 <div class="header-gradient-separator-bg text-start pt-5">
   <div class="container">
     <div class="row d-flex align-items-center ">
@@ -37,7 +35,8 @@
           </p>
           <ul class="mb-0">
             <li>Windows 10/11 (ajánlott)</li>
-            <li class="mb-0">Java 21 - ha nem rendelkezel még vele, akkor az Oracle hivatalos oldaláról <a href="https://www.oracle.com/java/technologies/downloads/#java21" target="_blank">itt</a> töltheted le. </li>
+            <li class="mb-0">Java 21 - ha nem rendelkezel még vele, akkor az Oracle hivatalos oldaláról
+                <a href="https://www.oracle.com/java/technologies/downloads/#java21" target="_blank">itt</a> töltheted le. </li>
           </ul>
         </div>
         <div class="row mt-3">
@@ -132,9 +131,10 @@
     <div class="col pt-5 d-flex align-items-center flex-column">
       <img src="{{ asset('assets/images/banyakozpont.png') }}" alt="Bányaközpont" class="w-100" style="max-width: 700px;">
       <p class="w-lg-75 px-4 px-lg-0 opacity-75">Hozz létre egy új fiókot, vagy jelentkezz be meglévő felhasználóddal a <b>Bányaközpont</b> felületén, ahol számos izgalmas lehetőség vár rád! Itt könnyedén testre szabhatod a karaktered megjelenését, és értékes nyereményeket gyűjthetsz be. <b>Bányászérméért</b> akár különleges rangokat is vásárolhatsz, amelyekkel még több élmény és extra funkció válik elérhetővé a játék során. </p>
-      <a href="#" class="btn btn-mc">
+      <a href="{{ url('/login') }}" class="btn btn-mc">
         <img src="{{ asset('assets/images/belepes.png') }}" alt="Bányaközpont belépés" style="width: 200px;">
       </a>
     </div>
   </div>
 </div>
+@endsection

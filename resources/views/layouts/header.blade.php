@@ -1,25 +1,17 @@
- <!-- Desktop navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg mt-3 p-2 d-none d-xl-block">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <a class="navbar-brand" href="#">
-                    <img src="{{ asset('assets/images/logo2.png') }}" alt="MesterMC">
-                </a>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@yield('title', 'MesterMC')</title>
+<link rel="shortcut icon" href="{{ asset('assets/images/villager.png') }}" type="image/x-icon">
 
-                <div class="d-flex flex-row">
-                    <a class="nav-link" href="#">Főoldal</a>
-                    <a class="nav-link" href="#download">Letöltés</a>
-                    <a class="nav-link" href="#gyik">GYIK</a>
-                </div>
+<link href="{{ asset('assets/styles/bootstrap.min.css') }}" rel="stylesheet" crossorigin="anonymous">
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" crossorigin="anonymous"></script>
 
-                <a href="#" class="btn btn-mc"><img src="{{ asset('assets/images/belepes.png') }}" alt="Bányaközpont belépés" style="width: 150px;"></a>
-            </div>
-        </div>
-    </nav>
+<link rel="stylesheet" href="{{ asset('assets/styles/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/styles/bs_config.css') }}">
 
-    <!-- Mobile navbar -->
-    <nav class="navbar-mobile d-flex d-xl-none">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('assets/images/logo2.png') }}" alt="MesterMC">
-        </a>
-    </nav>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="{{ asset('assets/styles/css2.css') }}" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ asset('assets/styles/uicons-brands.css') }}">
