@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <a class="navbar-brand" href="#">
-                    <img src="{{ asset('assets/images/logo2.png') }}" alt="MesterMC">
+                    <img src="{{ asset('assets/images/logo_small.png') }}" alt="MesterMC">
                 </a>
 
                 <div class="d-flex flex-row">
@@ -20,6 +20,6 @@
     <!-- Mobile navbar -->
     <nav class="navbar-mobile d-flex d-xl-none">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('assets/images/logo2.png') }}" alt="MesterMC">
+            <img src="{{ asset('assets/images/logo_small.png') }}" alt="MesterMC">
         </a>
     </nav>

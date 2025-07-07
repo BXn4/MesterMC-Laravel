@@ -36,12 +36,6 @@
 .toast-move[data-v-3d82c9b6] {
     transition: transform 0.3s ease;
 }
-.emergency-mode {
-    filter: brightness(0.8) contrast(1.2);
-}
-body.emergency-active {
-    overflow: hidden;
-}
 .line-clamp-2[data-v-cbc62cc2] {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -215,6 +209,56 @@ canvas[data-v-07be3fa1] {
     left: 0;
     right: 0;
     bottom: 0;
+}
+.honeypot-field[data-v-a21a694c] {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.honeypot-input[data-v-a21a694c] {
+    width: 1px !important;
+    height: 1px !important;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1px !important;
+    line-height: 1px !important;
+    color: transparent !important;
+}
+.visually-hidden[data-v-a21a694c] {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+.honeypot-field[data-v-a21a694c],
+.honeypot-field[data-v-a21a694c] *,
+.honeypot-input[data-v-a21a694c] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+.honeypot-field[data-v-a21a694c]:focus,
+.honeypot-field[data-v-a21a694c]:focus-within,
+.honeypot-input[data-v-a21a694c]:focus {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 .line-clamp-2[data-v-46b5d329] {
     display: -webkit-box;
@@ -3225,13 +3269,13 @@ body.emergency-active {
 @font-face {
     font-family: primeicons;
     font-display: block;
-    src: url(../fonts/primeicons-DMOk5skT.eot);
+    src: url(/assets/primeicons-DMOk5skT.eot);
     src:
-        url(../fonts/primeicons-DMOk5skT.eot?#iefix) format("embedded-opentype"),
-        url(../fonts/primeicons-C6QP2o4f.woff2) format("woff2"),
-        url(../fonts/primeicons-WjwUDZjB.woff) format("woff"),
-        url(../fonts/primeicons-MpK4pl85.ttf) format("truetype"),
-        url(../fonts/primeicons-Dr5RGzOO.svg?#primeicons) format("svg");
+        url(/assets/primeicons-DMOk5skT.eot?#iefix) format("embedded-opentype"),
+        url(/assets/primeicons-C6QP2o4f.woff2) format("woff2"),
+        url(/assets/primeicons-WjwUDZjB.woff) format("woff"),
+        url(/assets/primeicons-MpK4pl85.ttf) format("truetype"),
+        url(/assets/primeicons-Dr5RGzOO.svg?#primeicons) format("svg");
     font-weight: 400;
     font-style: normal;
 }

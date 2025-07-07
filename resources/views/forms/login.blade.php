@@ -2,8 +2,7 @@
 @section('title', 'Bejelentkezés - MesterMC Bányaközpont')
 
 @section('content')
-<!-- ORIGINAL <script type="module" crossorigin="" src="{{ asset('assets/js/index-B9OtgDgm.js') }}"></script> --->
-<link rel="stylesheet" crossorigin="" href="{{ asset('assets/styles/index-DQTt6O__.css') }}">
+<link rel="stylesheet" crossorigin="" href="{{ asset('assets/styles/forms.css') }}">
 <style type="text/css" data-primevue-style-id="primitive-variables">
   :root {
     --p-stone-50: #fafaf9;
@@ -2246,7 +2245,7 @@
         <div class="bg-surface-0 dark:bg-surface-950 w-full md:w-5/12 px-8 py-20 md:px-12 lg:px-16 flex flex-col gap-12 rounded min-h-screen justify-center">
           <div class="flex flex-col gap-4">
             <div class="flex items-center gap-4 mb-4">
-              <img src="{{ asset('assets/images/logoooo.png') }}" alt="MesterMC Logo" class="" style="width: 300px;">
+              <img src="{{ asset('assets/images/logo_big.png') }}" alt="MesterMC Logo" class="" style="width: 300px;">
             </div>
             <div class="flex flex-col gap-2">
               <div class="text-surface-900 dark:text-surface-0 text-2xl font-semibold leading-tight">Bányaközpont</div>
